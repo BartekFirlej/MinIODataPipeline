@@ -9,9 +9,9 @@ def process_and_store_message(message):
         message_dict = json.loads(message)
 
         # Remove the specified fields if they exist
-        message_dict.pop('countryId', None)
-        message_dict.pop('voivodeshipId', None)
-        message_dict.pop('cityId', None)
+        message_dict.pop('CountryId', None)
+        message_dict.pop('VoivodeshipId', None)
+        message_dict.pop('CityId', None)
 
         # Convert the modified message back to a JSON string
         modified_message = json.dumps(message_dict)
